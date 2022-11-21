@@ -26,7 +26,7 @@ class Example(QWidget):
 
     def draw_cyrcle(self, qp):
         # Задаем кисть
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         # Рисуем прямоугольник заданной кистью
         l = random.randint(5, 255)
         qp.drawEllipse(random.randint(5, 100), random.randint(5, 100), l, l)
