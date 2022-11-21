@@ -4,12 +4,12 @@ from PyQt5.QtGui import QPainter, QColor
 from PyQt5 import uic
 from PyQt5.QtWidgets import QWidget, QApplication
 import random
+from yellowCircles import Ui_Form
 
 
-class Example(QWidget):
+class Example(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
-        uic.loadUi("yellowCircles.ui", self)
         self.pushButton.clicked.connect(self.paint)
         self.do_paint = False
 
